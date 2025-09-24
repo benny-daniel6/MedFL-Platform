@@ -1,0 +1,63 @@
+# MedFL Project Requirements
+# Last Updated: September 16, 2025
+
+# ---------------------------------
+# Core ML and FL Frameworks
+# ---------------------------------
+torch==2.8.0
+torchvision==0.23.0 
+# PyTorch is the primary deep learning framework. Torchvision provides necessary tools for computer vision.
+
+flower==1.2.0
+# Flower (flwr) is the federated learning framework that orchestrates the server and clients.
+
+opacus==1.5.4
+# Opacus is used for implementing differential privacy with PyTorch models.
+
+timm==1.0.19
+# PyTorch Image Models (timm) provides the pre-trained Vision Transformer (ViT) backbone for the TransUNet model.
+
+# ---------------------------------
+# Deployment and User Interface
+# ---------------------------------
+fastapi==0.116.1
+# A modern, high-performance web framework for building the inference API.
+
+uvicorn[standard]==0.30.1
+# The ASGI server that runs the FastAPI application. '[standard]' includes recommended extras.
+
+streamlit==1.49.1
+# Used to build and share the interactive web-based clinician dashboard.
+
+pydantic==2.11.9
+# Core dependency for FastAPI, used for data validation and settings management.
+
+python-multipart==0.0.9
+# Required by FastAPI to handle file uploads (e.g., the MRI images).
+
+# ---------------------------------
+# Data Handling and Processing
+# ---------------------------------
+numpy==2.2.6
+# Fundamental package for scientific computing with Python.
+
+pandas==2.2.3
+# Used for data manipulation, particularly for organizing file paths and patient IDs.
+
+scikit-learn
+# Used for splitting the dataset into training and testing sets.
+
+SimpleITK
+# A powerful library for medical image analysis; can be used for DICOM/NIFTI files.
+
+Pillow
+# The Python Imaging Library (PIL) fork, essential for opening, manipulating, and saving image files.
+
+tqdm
+# Provides smart, extensible progress bars for loops and long-running operations.
+
+# ---------------------------------
+# Testing and Code Quality
+# ---------------------------------
+pytest
+# The framework used for writing and running unit and integration tests.
