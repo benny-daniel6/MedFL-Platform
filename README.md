@@ -2,35 +2,6 @@ MedFL: Secure Medical Image Segmentation using Federated Learning
 🚀 Live Demo
 [https://huggingface.co/spaces/bennyx06/MedFL-Demo]
 
-📁 Final Project File Structure
-This is the clean and professional structure you should have on your local machine before uploading. It includes everything needed to showcase your project's full scope.
-
-MedFL-Platform/
-│
-├── .gitattributes # Handles the large model file with Git LFS
-├── .gitignore # Ignores unnecessary folders like 'venv' and 'data'
-│
-├── app.py # All-in-one Streamlit app for your live demo
-├── README.md # Your final, polished project documentation
-├── requirements.txt # The list of all necessary Python libraries
-│
-├── transunet_centralized_best.pth # Your final, trained model weights
-│
-├── src/ # The core source code for your project
-│ ├── **init**.py
-│ ├── client.py
-│ ├── data_loader.py
-│ ├── model.py
-│ ├── strategy.py
-│ └── train_utils.py
-│
-├── deployment/ # Contains your cloud deployment guide
-│ └── deploy_gcp.md
-│
-├── train_centralized.py # Script showing how the main model was trained
-├── run_server.py # Script for running the FL server
-└── run_client.py # Script for running an FL client
-
 Final Application
 The final clinician dashboard, providing an AI-powered segmentation mask on an uploaded MRI scan.
 
