@@ -41,28 +41,28 @@ An NVIDIA GPU is highly recommended for training.
 Setup
 Bash
 
- 1. Clone the repository
+1. Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+  cd YOUR_REPO_NAME
 
- 2. Create a virtual environment and activate it
+2. Create a virtual environment and activate it
 
-python -m venv venv
+  python -m venv venv
 
- On Windows: venv\Scripts\activate
+  On Windows: venv\Scripts\activate
 
- On macOS/Linux: source venv/bin/activate
+  On macOS/Linux: source venv/bin/activate
 
- 3. Install dependencies
+3. Install dependencies
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
- 4. Manually download the dataset from Kaggle:
+4. Manually download the dataset from Kaggle:
 
-# - Go to: [https://www.kaggle.com/datasets/mateusz-buda/lgg-mri-segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)
+  - Go to: [https://www.kaggle.com/datasets/mateusz-buda/lgg-mri-segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)
 
- - Download, unzip, and place the 'lgg-mri-segmentation' folder inside a 'data/' directory in the project root.
+  - Download, unzip, and place the 'lgg-mri-segmentation' folder inside a 'data/' directory in the project root.
 
 How to Run the Project
 A) Centralized Training (Required First)
@@ -104,4 +104,4 @@ The final model training curves, showing consistent improvement on the validatio
 The final trained model is capable of accurately segmenting tumor regions in previously unseen MRI scans, as demonstrated in the live application.
 
 7. Sustainability ("Green AI")
-   This project incorporates Green AI principles by making computationally efficient choices. The TransUNet model leverages a pre-trained Vision Transformer, significantly reducing the total training computation required compared to training from scratch. This approach, known as transfer learning, is a key strategy for developing powerful models more sustainably.
+   This project incorporates Green AI principles by making computationally efficient choices. The TransUNet model leverages a pre-trained Vision Transformer, significantly reducing the total training         computation required compared to training from scratch. This approach, known as transfer learning, is a key strategy for developing powerful models more sustainably.
