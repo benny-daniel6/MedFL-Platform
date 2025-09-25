@@ -2,8 +2,6 @@ MedFL: Secure Medical Image Segmentation using Federated Learning
 
 **[🚀 Live Demo](https://huggingface.co/spaces/bennyx06/MedFL-Demo)**
 
-**[Link to Dataset](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)**
-
 Final Application
 The final clinician dashboard, providing an AI-powered segmentation mask on an uploaded MRI scan.
 
@@ -43,28 +41,28 @@ An NVIDIA GPU is highly recommended for training.
 Setup
 Bash
 
-# 1. Clone the repository
+ 1. Clone the repository
 
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 
-# 2. Create a virtual environment and activate it
+ 2. Create a virtual environment and activate it
 
 python -m venv venv
 
-# On Windows: venv\Scripts\activate
+ On Windows: venv\Scripts\activate
 
-# On macOS/Linux: source venv/bin/activate
+ On macOS/Linux: source venv/bin/activate
 
-# 3. Install dependencies
+ 3. Install dependencies
 
 pip install -r requirements.txt
 
-# 4. Manually download the dataset from Kaggle:
+ 4. Manually download the dataset from Kaggle:
 
-# - Go to: https://www.kaggle.com/datasets/mateusz-buda/lgg-mri-segmentation
+# - Go to: [https://www.kaggle.com/datasets/mateusz-buda/lgg-mri-segmentation](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)
 
-# - Download, unzip, and place the 'lgg-mri-segmentation' folder inside a 'data/' directory in the project root.
+ - Download, unzip, and place the 'lgg-mri-segmentation' folder inside a 'data/' directory in the project root.
 
 How to Run the Project
 A) Centralized Training (Required First)
@@ -72,7 +70,7 @@ This trains the model on the entire dataset to create the transunet_centralized_
 
 Bash
 
-# This will take a significant amount of time
+ This will take a significant amount of time
 
 python train_centralized.py
 B) Local Web Application Demo
@@ -80,7 +78,7 @@ After training is complete, run the local demo.
 
 Bash
 
-# This is for local testing before deployment
+ This is for local testing before deployment
 
 streamlit run deployment/app/app.py
 C) Federated Learning Demonstration (Windows / Manual)
@@ -88,15 +86,15 @@ This demonstrates the FL concept by running a server and clients in separate ter
 
 Bash
 
-# In Terminal 1 (start the server):
+ In Terminal 1 (start the server):
 
 python run_server.py
 
-# In Terminal 2 (start client 0):
+ In Terminal 2 (start client 0):
 
 python run_client.py --cid 0
 
-# In Terminal 3 (start client 1):
+ In Terminal 3 (start client 1):
 
 python run_client.py --cid 1 6. Results and Evaluation
 The model was successfully trained, overcoming an initial performance plateau. By unfreezing the pre-trained encoder, adding data augmentation, and using a dynamic learning rate scheduler, the model's Validation Dice Score improved significantly, demonstrating effective fine-tuning.
