@@ -2,6 +2,8 @@ MedFL: Secure Medical Image Segmentation using Federated Learning
 
 **[🚀 Live Demo](https://huggingface.co/spaces/bennyx06/MedFL-Demo)**
 
+**[Link to Dataset](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)**
+
 Final Application
 The final clinician dashboard, providing an AI-powered segmentation mask on an uploaded MRI scan.
 
